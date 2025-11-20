@@ -1,0 +1,28 @@
+name: CI - Simulación de Integración Continua
+
+on:
+  pull_request:
+    branches:
+      - develop
+  push:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Verificar estructura del proyecto
+        run: |
+          echo "Verificando archivos del proyecto..."
+          ls -R
+
+      - name: Simular pruebas automáticas
+        run: |
+          echo "Ejecutando pruebas simuladas..."
+          echo "Todas las pruebas han pasado exitosamente (simulado)"
+
