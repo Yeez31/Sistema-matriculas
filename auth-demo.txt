@@ -1,0 +1,1 @@
+Simulación del sistema de autenticación y roles para efectos de pruebas.
